@@ -6,6 +6,8 @@ Made specifically for the mainframe department (~200 devs).
 
 All references and code from my org has been clensed from this repository, but I do not expect anyone to use it.
 
+![extension](./images/extension.png)
+
 ## Distribution
 
 `extension` folder is for the VS Code extension side which is installed per user.
