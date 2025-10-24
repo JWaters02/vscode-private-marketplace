@@ -1,0 +1,181 @@
+{
+    "approvedExtensionsPath": "/approved",
+    "approvedExtensions": [
+        {
+            "name": "Zowe Developer Tools 4 vscode",
+            "packageName": "vscode-zowe-developer-tools-1.3.0",
+            "category": "Mainframe"
+        },
+        {
+            "name": "vscode Private Marketplace",
+            "packageName": "vscode-private-marketplace-1.0.0",
+            "category": "Utilities"
+        },
+        {
+            "name": "Zowe Explorer",
+            "packageName": "zowe.vscode-extension-for-zowe-3.3.0",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Zowe Explorer FTP Extension",
+            "packageName": "zowe.zowe-explorer-ftp-extension-3.2.2",
+            "category": "Mainframe"
+        },
+        {
+            "name": "IBM Z Open Editor",
+            "packageName": "ibm.zopeneditor-5.5.0",
+            "category": "Mainframe"
+        },
+        {
+            "name": "IBM CICS for Zowe Explorer",
+            "packageName": "zowe.cics-extension-for-zowe-3.13.2",
+            "category": "Mainframe"
+        },
+        {
+            "name": "IBM DB2 Developer Extension",
+            "packageName": "ibm.db2forzosdeveloperextension-2.2.4",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Broadcom COBOL Control Flow",
+            "packageName": "broadcommfd.ccf-1.2.2",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Broadcom COBOL Language Support",
+            "packageName": "broadcommfd.cobol-language-support-2.4.3-win32-x64",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Broadcom Explorer for Endevor",
+            "packageName": "broadcommfd.explorer-for-endevor-1.11.2",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Broadcom HLASM Language Support",
+            "packageName": "broadcommfd.hlasm-language-support-1.17.0",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Broadcom JCL Language Support",
+            "packageName": "broadcommfd.jcl-language-support-3.0.1",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Broadcom JCL Check",
+            "packageName": "broadcommfd.jcl-check-support-3.0.2",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Broadcom REXX Language Support",
+            "packageName": "broadcommfd.lsp-for-rexx-0.0.20",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Editor Crosshair",
+            "packageName": "bitlang.vscode-crosshair-0.5.0",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Github Copilot",
+            "packageName": "github.copilot-1.338.0",
+            "category": "Utilities"
+        },
+        {
+            "name": "Github Copilot Chat",
+            "packageName": "github.copilot-chat-0.28.5",
+            "category": "Utilities"
+        },
+        {
+            "name": "Playwright Test for VS Code",
+            "packageName": "ms-playwright.playwright-1.1.15",
+            "category": "Testing"
+        },
+        {
+            "name": "Jest for VS Code",
+            "packageName": "orta.vscode-jest-6.4.4",
+            "category": "Testing"
+        },
+        {
+            "name": "Jest Runner",
+            "packageName": "firsttris.vscode-jest-runner-0.4.84",
+            "category": "Testing"
+        },
+        {
+            "name": "Postman",
+            "packageName": "postman.postman-for-vscode-1.15.0",
+            "category": "Testing"
+        },
+        {
+            "name": "REST Thunder Client",
+            "packageName": "rangav.vscode-thunder-client-2.35.2",
+            "category": "Testing"
+        },
+        {
+            "name": "Hex Editor",
+            "packageName": "ms-vscode.hexeditor-1.11.1",
+            "category": "Mainframe"
+        },
+        {
+            "name": "Azure Repos",
+            "packageName": "ms-vscode.azure-repos-0.40.0",
+            "category": "Utilities"
+        },
+        {
+            "name": "Pylance",
+            "packageName": "ms-python.vscode-pylance-2025.6.2.vsix",
+            "category": "Utilities"
+        },
+        {
+            "name": "Python Language Support",
+            "packageName": "ms-python.python-2025.8.0-win32-x64",
+            "category": "Utilities"
+        },
+        {
+            "name": "Python Debugger",
+            "packageName": "ms-python.debugpy-2025.8.0-win32-x64",
+            "category": "Utilities"
+        },
+        {
+            "name": "YAML Support",
+            "packageName": "redhat.vscode-yaml-1.20.2025101508",
+            "category": "Utilities"
+        },
+        {
+            "name": "VS Code for WSL",
+            "packageName": "ms-vscode-remote.remote-wsl-0.99.0",
+            "category": "Utilities"
+        },
+        {
+            "name": "Markdown All in One",
+            "packageName": "yzhang.markdown-all-in-one-3.6.3",
+            "category": "Utilities"
+        },
+        {
+            "name": "GitLens",
+            "packageName": "eamodio.gitlens-2025.10.2305",
+            "category": "Utilities"
+        },
+        {
+            "name": "Material Icon Theme",
+            "packageName": "pkief.material-icon-theme-5.27.0",
+            "category": "Utilities"
+        },
+        {
+            "name": "Redhat Ansible",
+            "packageName": "redhat.ansible-25.8.1",
+            "category": "Utilities"
+        }
+    ],
+    "extraWhitelist": [
+        "broadcommfd.code4z-extension-pack"
+    ],
+    "allowAllVersions": [
+        "github.copilot",
+        "github.copilot-chat",
+        "org.vscode-zowe-developer-tools",
+        "org.vscode-private-marketplace"
+    ],
+    "zoweConfigVersion": 1,
+    "zoweSchemaVersion": 1
+}

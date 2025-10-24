@@ -1,0 +1,10 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$version": "1.0",
+    "vscode-internal-version": 1,
+    "type": "object",
+    "description": "Zowe configuration",
+    "properties": {
+        "standard zowe schema": "json file"
+    }
+}

@@ -1,0 +1,12 @@
+.vscode/**
+.history/**
+out/**/*.map
+out/**/__mocks__/**
+out/**/__tests__/**
+src/**
+vsix/**
+.gitignore
+.gitattributes
+.prettierignore
+tsconfig.json
+eslint.config.mjs

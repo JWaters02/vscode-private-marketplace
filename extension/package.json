@@ -1,0 +1,135 @@
+{
+  "name": "vscode-private-marketplace",
+  "displayName": "VS Code Private Marketplace",
+  "publisher": "Joshua Waters",
+  "author": {
+    "name": "Joshua Waters",
+    "email": "watersjoshua2002@gmail.com"
+  },
+  "license": "EPL-2.0",
+  "description": "Private extension marketplace for VS Code approved extensions.",
+  "version": "1.0.0",
+  "icon": "resources/NextB.png",
+  "repository": {
+    "url": "https://dev.azure.com/ADO-Project"
+  },
+  "keywords": [
+    "Extensions",
+    "vscode",
+    "Developer Tools"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-private-marketplace.downloadExtension",
+        "title": "Download Extension"
+      },
+      {
+        "command": "vscode-private-marketplace.toggleTestMode",
+        "title": "Toggle Test Mode"
+      },
+      {
+        "command": "vscode-private-marketplace.queryExtension",
+        "title": "Query Extension"
+      },
+      {
+        "command": "vscode-private-marketplace.debug",
+        "title": "Debug"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "vscode-private-marketplace",
+          "title": "vscode Approved Extensions",
+          "icon": "$(extensions)"
+        }
+      ]
+    },
+    "views": {
+      "vscode-private-marketplace": [
+        {
+          "id": "vscode-approved-extensions",
+          "name": "",
+          "type": "tree",
+          "icon": "$(extensions)"
+        }
+      ]
+    },
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "vscode-private-marketplace.toggleTestMode",
+          "group": "vscode Private Marketplace"
+        },
+        {
+          "command": "vscode-private-marketplace.debug",
+          "group": "vscode Private Marketplace"
+        }
+      ],
+      "view/item/context": [
+        {
+          "when": "view == vscode-approved-extensions && viewItem == extension-downloadable",
+          "command": "vscode-private-marketplace.downloadExtension",
+          "group": "inline"
+        },
+        {
+          "when": "view == vscode-approved-extensions && viewItem == extension-downloadable",
+          "command": "vscode-private-marketplace.downloadExtension",
+          "group": "navigation"
+        },
+        {
+          "when": "viewItem == extension-downloadable",
+          "command": "vscode-private-marketplace.queryExtension",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "vscode Private Marketplace",
+      "properties": {
+        "vscode-private-marketplace.hideVsixInstallMessage": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, hides the prompt to open the extension in the extensions view after installing a VSIX."
+        },
+        "vscode-private-marketplace.overrideDownloadsPath": {
+          "type": "string",
+          "default": "",
+          "description": "The absolute path to your alternate downloads folder (e.g. C:\\ChromeDownloads). Only enable this option if you changed your browser's default download location!"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint \"src/**/*.ts\"",
+    "watch": "tsc -w -p ./",
+    "package": "vsce package && move *.vsix vsix/",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "dependencies": {
+    "@types/vscode": "^1.95.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@stylistic/eslint-plugin": "^2.9.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.2.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^9.13.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0"
+  }
+}

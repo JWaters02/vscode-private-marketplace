@@ -1,0 +1,15 @@
+{
+    "$schema": "./zowe.schema.json",
+    "vscode-internal-version": 1,
+    "profiles": {
+        "put your profiles here": "profiles"
+    },
+    "defaults": {
+        "zosmf": "zosmf",
+        "tso": "tso",
+        "ssh": "ssh",
+        "cics": "cics",
+        "base": "base"
+    },
+    "autoStore": true
+}
