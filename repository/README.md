@@ -1,6 +1,6 @@
-# Private Extension Marketplace
+# VS Code Private Marketplace (Repository)
 
-Private extension repository for controlling distributed extension versions and allowing users to install extensions without having to do a `Prohibited Downloads` request.
+Private extension repository for controlling distributed extension versions.
 
 ## How to obtain VSIX files
 
